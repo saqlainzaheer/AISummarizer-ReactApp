@@ -131,9 +131,10 @@ const Demo = () => {
             />
             <button
               type="submit"
-              className="relative right-16 submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700"
+              disabled={isLoading}
+              className=" relative right-16  submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700"
             >
-              {">"}
+              {"->"}
             </button>
           </form>
           {lastFiveResults.length !== 0 && (
